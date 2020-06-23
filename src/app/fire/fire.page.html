@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar><ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+    <ion-title> MY WORDS </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="width: 300px;">
+    <form (ngSubmit)="onSubmit()">
+      <div style="margin-top: 10%;" class="form-group">
+        <label style="padding: 5%; " for="item">My Word</label>
+        <input type="text" class="form-control"
+          placeholder="Enter the word..." id="item"
+          required [(ngModel)]="itemValue" name="item">
+      </div>
+ 
+      <div class="btn-group">
+        <button type="submit" style="margin-left: 5%; padding: 5%; margin-top: 5%; background-color: #e74c3c; color: white;" class="btn btn-success">Add To List</button>
+      </div>
+    </form>
+  </div>
+ 
+  <h2 style="left: 5%; margin-top: 5%; border: 1px #0a3d62 solid; padding: 2%; background-color:#0a3d62; color: #f5f6fa; border-radius: 10px;"><strong>LIST OF WORDS I MEMORIZED </strong></h2>
+  <div class="col-md-3"> <ol>
+<li *ngFor="let item of items | async">{{item.content}}</li></ol>
+  </div>
+ 
+
+
+</ion-content>

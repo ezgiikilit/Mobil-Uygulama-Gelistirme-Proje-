@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar><ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+    <ion-title>Orta Seviye Test</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content><!-- add to homescreen for ios -->
+
+  <h1 style="color: #d63031;">LET'S START IT! </h1>
+
+
+<form id = "quiz" name = "quiz">
+
+
+  <p class = "questions">1. What does it mean in Turkish 'Humor'?</p>
+  <input id = "textbox" type = "text" name = "question1">
+  
+  <p class = "questions">2. What doeas it mean in Turkis 'Groom'?</p>
+  <input id = "textbox" type = "text" name = "question2">
+  
+  <p class = "questions">3. What does it mean in English 'Öfkelenmek'?</p>
+  <input id = "textbox" type = "text" name = "question3">
+  
+  <p class = "questions">4. What does it mean in English 'Dikiş Dikmek'?</p>
+  <input id = "textbox" type = "text" name = "question4">
+  
+  <p class = "questions">5. What does it mean in Turkish 'Confidence'?</p>
+  <input type = "radio" id = "mc" name = "question5" value = "Güven"> Güven<br>
+  <input type = "radio" id = "mc" name = "question5" value = "Sabır"> Sabır<br>
+  
+  <p class = "questions">6. What does it mean in Turkish 'Adventure'?</p>
+  <input type = "radio" id = "mc" name = "question6" value = "Tavsiye"> Tavsiye<br>
+  <input type = "radio" id = "mc" name = "question6" value = "Macera"> Macera<br>
+  
+  <p class = "questions">7. What does it mean in English 'Bağırmak'?</p>
+  <input type = "radio" id = "mc" name = "question7" value = "Scream"> Scream<br>
+  <input type = "radio" id = "mc" name = "question7" value = "Suck"> Suck<br>
+  
+  <p class = "questions">8. What does it mean in English 'Avukat'?</p>
+  <input type = "radio" id = "mc" name = "question8" value = "Lawyer"> Lawyer<br>
+  <input type = "radio" id = "mc" name = "question8" value = "Lawcourt"> Lawcourt<br>
+  
+  <p class = "questions">9. What does it mean in English 'Ummak/ Beklemek'?</p>
+  <input type = "radio" id = "mc" name = "question9" value = "Extend"> Extend<br>
+  <input type = "radio" id = "mc" name = "question9" value = "Expect"> Expect<br><br><br>
+  
+  <img src="./assets/image/soru/journalist.png" style="height: 40%; width: 40%;">
+  <p class = "questions">10. What is it in the picture?</p>
+  <input type = "radio" id = "mc" name = "question10" value = "Journalist"> Journalist<br>
+  <input type = "radio" id = "mc" name = "question10" value = "Jealous"> Jealous<br>
+  
+
+<input id = "button" type = "button" value = "I'm finished!" onClick = "checkts1();">
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+
+<div> <img src="../assets/image/answer.png" style="width: 100%;">
+  <ion-button color="dark" [routerLink]="['/cevapanahtari']">Test Answers</ion-button></div>
+
+  
+</ion-content>

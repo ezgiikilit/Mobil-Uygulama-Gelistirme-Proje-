@@ -1,0 +1,104 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Temel Seviye</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button Href="home.page.html"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<img src="../assets/image/message.png" style="width: 100%; margin: auto;">
+  <ion-slides id="s1" pager="false" [options]="slideOpts">
+    <ion-slide class="slide1">
+      <div class="div" onClick="SesOynat('sleep');" ><audio id="sleep"><source src="assets/audio/temel/sleep.mp3" type="audio/mpeg"></audio> <p>sleep </p><img style="width: 40%;" src="assets/image/kolay/a1.png"><br><br> <p> uyumak</p> </div>
+    </ion-slide>
+    <ion-slide class="slide2">
+      <div class="div" onClick="SesOynat('wave');" ><audio id="wave"><source src="assets/audio/temel/wave.mp3" type="audio/mpeg"></audio>  <p>wave </p><img style="width: 40%;" src="assets/image/kolay/a2.png"><br><br> <p> dalgalanmak, dalga</p> </div>
+</ion-slide>
+    <ion-slide class="slide3">
+           <div class="div" onClick="SesOynat('neck');" ><audio id="neck"><source src="assets/audio/temel/neck.mp3" type="audio/mpeg"></audio> <p>neck </p><img style="width: 40%;" src="assets/image/kolay/a3.png"><br><br> <p> boyun</p></div>
+    </ion-slide>
+    <ion-slide class="slide4">
+        <div class="div" onClick="SesOynat('oven');" ><audio id="oven"><source src="assets/audio/temel/oven.mp3" type="audio/mpeg"></audio> <p>oven </p><img style="width: 30%;" src="assets/image/kolay/a4.png"><br><br><p> fırın </p> </div>
+    </ion-slide>
+    <ion-slide class="slide5">
+        <div class="div" onClick="SesOynat('truth');" ><audio id="truth"><source src="assets/audio/temel/truth.mp3" type="audio/mpeg"></audio> <p>truth </p><img style="width: 50%;" src="assets/image/kolay/a5.png"><br><br><p>doğruluk, hakikat, gerçek </p> </div>
+    </ion-slide>
+  </ion-slides> 
+
+
+  <ion-slides id="s2" pager="false" [options]="slideOpts">
+    <ion-slide class="slide1">
+       <div class="div" onClick="SesOynat('game');" ><audio id="game"><source src="assets/audio/temel/game.mp3" type="audio/mpeg"></audio>  <p>game </p><img style="width: 30%;" src="assets/image/kolay/a6.png"><br><br><p> oyun</p></div>
+    </ion-slide>
+    <ion-slide class="slide2">
+        <div class="div" onClick="SesOynat('science');" ><audio id="science"><source src="assets/audio/temel/science.mp3" type="audio/mpeg"></audio><p>science</p><img style="width: 30%;" src="assets/image/kolay/a7.png"><br><br><p> bilim </p> </div>
+    </ion-slide>
+    <ion-slide class="slide3">
+       <div class="div" onClick="SesOynat('fight');" ><audio id="fight"><source src="assets/audio/temel/fight.mp3" type="audio/mpeg"></audio> <p>fight </p><img style="width:10%;" src="assets/image/kolay/a8.png"><br><br><p> dövüşmek, kavga</p> </div>
+    </ion-slide>
+    <ion-slide class="slide4">
+        <div class="div" onClick="SesOynat('bicycle');" ><audio id="bicycle"><source src="assets/audio/temel/bicycle.mp3" type="audio/mpeg"></audio> <p>bicycle </p><img style="width: 15%;" src="assets/image/kolay/a9.png"><br><br><p> bisiklet </p> </div>
+    </ion-slide>
+    <ion-slide class="slide5">
+        <div class="div" onClick="SesOynat('polish');" ><audio id="polish"><source src="assets/audio/temel/polish.mp3" type="audio/mpeg"></audio> <p>polish </p><img style="width: 30%;" src="assets/image/kolay/a10.png"><br><br><p> parlatmak, cilalamak </p> </div>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides id="s3" pager="false" [options]="slideOpts">
+    <ion-slide class="slide1">
+      <div class="div" onClick="SesOynat('railroad');" ><audio id="railroad"><source src="assets/audio/temel/railroad.mp3" type="audio/mpeg"></audio> <p> rail road </p><img style="width: 100%;" src="assets/image/kolay/a11.png"><br><br> <p> demir yolu</p> </div>
+    </ion-slide>
+    <ion-slide class="slide2">
+        <div class="div" onClick="SesOynat('tail');" ><audio id="tail"><source src="assets/audio/temel/tail.mp3" type="audio/mpeg"></audio> <p>tail</p><img style="width: 60%;" src="assets/image/kolay/a12.png"><br><br><p> kuyruk </p> </div>
+    </ion-slide>
+    <ion-slide class="slide3">
+         <div class="div" onClick="SesOynat('van');" ><audio id="van"><source src="assets/audio/temel/van.mp3" type="audio/mpeg"></audio><p>van </p><img style="width: 100%;" src="assets/image/kolay/a13.png"><br><br><p> kamyonet</p> </div>
+    </ion-slide>
+    <ion-slide class="slide4">
+        <div class="div" onClick="SesOynat('armchair');" ><audio id="armchair"><source src="assets/audio/temel/armchair.mp3" type="audio/mpeg"></audio><p>armchair</p><img style="width: 40%;" src="assets/image/kolay/a14.png"><br><br><p> tek kişilik koltuk </p> </div>
+    </ion-slide>
+    <ion-slide class="slide5">
+       <div class="div" onClick="SesOynat('cylinder');" ><audio id="cylinder"><source src="assets/audio/temel/cylinder.mp3" type="audio/mpeg"></audio><p>cylinder </p><img style="width: 60%;" src="assets/image/kolay/a15.png"><br><br><p> silindir</p> </div>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-slides id="s4" pager="false" [options]="slideOpts">
+    <ion-slide class="slide1">
+      <div class="div" onClick="SesOynat('classical');" ><audio id="classical"><source src="assets/audio/temel/classical.mp3" type="audio/mpeg"></audio> <p>classical </p><img style="width:300px; height: 200px;" src="assets/image/kolay/a16.jpg"><br><br><p>klasik </p> </div>
+    </ion-slide>
+    <ion-slide class="slide2">
+      <div class="div" onClick="SesOynat('carnation');" ><audio id="carnation"><source src="assets/audio/temel/carnation.mp3" type="audio/mpeg"></audio> <p>carnation</p><img style="width: 80%; height: 80%;" src="assets/image/kolay/a17.png"><br><br><p> elçilik </p> </div>
+    </ion-slide>
+    <ion-slide class="slide3">
+      <div class="div" onClick="SesOynat('atom');" ><audio id="atom"><source src="assets/audio/temel/atom.mp3" type="audio/mpeg"></audio> <p>atom </p><img style="width: 200px; height: 200px;" src="assets/image/kolay/a18.png"><br><br><p> bağımsız</p> </div>
+    </ion-slide>
+    <ion-slide class="slide4">
+      <div class="div" onClick="SesOynat('police');" ><audio id="police"><source src="assets/audio/temel/police.mp3" type="audio/mpeg"></audio> <p>police </p><img style="width: 50%; height: 50%;" src="assets/image/kolay/a19.png"><br><br> <p>polis </p> </div>
+    </ion-slide>
+    <ion-slide class="slide5">
+           <div class="div" onClick="SesOynat('truck');" ><audio id="truck"><source src="assets/audio/temel/truck.mp3" type="audio/mpeg"></audio><p>truck </p><img style="width: 200px; height: 200px;" src="assets/image/kolay/a20.png"><br><br><p> kamyon </p> </div>
+    </ion-slide>
+  </ion-slides>
+  
+  <ion-slides id="s5" pager="false" [options]="slideOpts">
+    <ion-slide class="slide1">
+      <div class="div" onClick="SesOynat('store');" ><audio id="store"><source src="assets/audio/temel/store.mp3" type="audio/mpeg"></audio> <p>store </p><img style="width: 40%" src="assets/image/kolay/a21.png"><br><br><p>mağaza, depo, depolamak</p> </div>
+    </ion-slide>
+    <ion-slide class="slide2">
+      <div class="div" onClick="SesOynat('finger');" ><audio id="finger"><source src="assets/audio/temel/finger.mp3" type="audio/mpeg"></audio> <p>finger</p><img style="width: 35%" src="assets/image/kolay/a22.png"><br><br><p> parmak</p> </div>
+    </ion-slide>
+    <ion-slide class="slide3">
+      <div class="div" onClick="SesOynat('stone');" ><audio id="stone"><source src="assets/audio/temel/stone.mp3" type="audio/mpeg"></audio> <p>stone </p><img style="width: 70%; height: 70%;" src="assets/image/kolay/a23.png"><br><br><p> taş </p> </div>
+    </ion-slide>
+    <ion-slide class="slide4">
+      <div class="div" onClick="SesOynat('subtraction');" ><audio id="subtraction"><source src="assets/audio/temel/subtraction.mp3" type="audio/mpeg"></audio> <p>Subtraction</p><img style="width: 50%; height: 50%;" src="assets/image/kolay/a24.png"><br><br> <p>Çıkarmak, eksilmek, çıkarma işlemi </p> </div>
+    </ion-slide>
+    <ion-slide class="slide5">
+           <div class="div" onClick="SesOynat('carrot');" ><audio id="carrot"><source src="assets/audio/temel/carrot.mp3" type="audio/mpeg"></audio><p>carrot </p><img style="width: 40%;" src="assets/image/kolay/a25.png"><br><br><p> havuç </p> </div>
+    </ion-slide>
+  </ion-slides>
+
+
+</ion-content>

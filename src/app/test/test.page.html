@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar><ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+    <ion-title>Temel Seviye Test</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+ <h1 style="color: #ff3838;">LET'S START IT! </h1>
+
+
+<form id = "quiz" name = "quiz">
+
+
+<p class = "questions">1. What does it mean in Turkish 'Science'?</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">2. What doeas it mean in Turkish 'Classical'?</p>
+<input id = "textbox" type = "text" name = "question2">
+
+<p class = "questions">3. What does it mean in Turkish 'Carnation'?</p>
+<input id = "textbox" type = "text" name = "question3">
+
+<p class = "questions">4. What does it mean in English 'Atom'?</p>
+<input id = "textbox" type = "text" name = "question4">
+
+<p class = "questions">5. What does it mean in Turkish 'Van'?</p>
+<input type = "radio" id = "mc" name = "question5" value = "Kamyon"> Kamyon<br>
+<input type = "radio" id = "mc" name = "question5" value = "Kamyonet"> Kamyonet<br>
+
+<p class = "questions">6. What does it mean in Turkish 'Polish'?</p>
+<input type = "radio" id = "mc" name = "question6" value = "Parlatmak"> Parlatmak<br>
+<input type = "radio" id = "mc" name = "question6" value = "Polis"> Polis<br>
+
+<p class = "questions">7. What does it mean in English 'Taş'?</p>
+<input type = "radio" id = "mc" name = "question7" value = "Store"> Store<br>
+<input type = "radio" id = "mc" name = "question7" value = "Stone"> Stone<br>
+
+<p class = "questions">8. What does it mean in English 'Parmak'?</p>
+<input type = "radio" id = "mc" name = "question8" value = "Finger">Finger<br>
+<input type = "radio" id = "mc" name = "question8" value = "Fink"> Fink<br>
+
+<p class = "questions">9. What does it mean in English 'Çıkarmak/Çıkarma İşlemi'?</p>
+<input type = "radio" id = "mc" name = "question9" value = "Subjacent"> Subjacent<br>
+<input type = "radio" id = "mc" name = "question9" value = "Subtraction"> Subtraction<br><br><br>
+
+<img src="./assets/image/soru/parrot.png" style="height: 30%; width: 30%;"> 
+<p class = "questions">10. What is it in the picture?</p>
+<input type = "radio" id = "mc" name = "question10" value = "Parrot"> Parrot<br>
+<input type = "radio" id = "mc" name = "question10" value = "Carrot"> Carrot<br>
+
+
+
+
+
+
+
+
+<input id = "button" type = "button" value = "I'm finished!" onClick = "check();"> 
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+
+<div> <img src="../assets/image/answer.png" style="width: 100%;">
+  <ion-button color="dark" [routerLink]="['/cevapanahtari']">Test Answers</ion-button></div>
+  
+  
+</ion-content>
